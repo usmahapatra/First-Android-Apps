@@ -1,0 +1,118 @@
+package com.example.ujjwalsmahapatra.customadapterfirstwithlistviewarraylist;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+    Button button1;
+    EditText editText1;
+    EditText editText2;
+    EditText editText3;
+    ListView listView1;
+    ArrayList<Employee> arrayList1;
+    MyAdapter m;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //Initialisation
+
+        button1=(Button)findViewById(R.id.button1);
+        editText1=(EditText)findViewById(R.id.editText1);
+        editText2=(EditText)findViewById(R.id.editText2);
+        editText3=(EditText)findViewById(R.id.editText3);
+        listView1=(ListView)findViewById(R.id.listView1);
+
+        //Arraylist initialization:
+
+        arrayList1=new ArrayList<Employee>();
+
+        //Adapter Initialization
+        m=new MyAdapter();
+
+        //Link listview to the adapter
+
+        listView1.setAdapter(m);
+
+        //buttonclick
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Employee e1=new Employee();
+                e1.setEmpName(editText1.getText().toString());
+                e1.setEmpSal(editText2.getText().toString());
+                e1.setEmpDesignation(editText3.getText().toString());
+
+                //add to the arraylist
+
+                arrayList1.add(e1);
+                m.notifyDataSetChanged();
+
+                //clear the edittexts
+
+                editText1.setText("");
+                editText2.setText("");
+                editText3.setText("");
+
+                editText1.requestFocus();
+                editText2.requestFocus();
+                editText3.requestFocus();
+            }
+        });
+
+    }
+    public class MyAdapter extends BaseAdapter{
+
+        @Override
+        public int getCount() {
+            return arrayList1.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return arrayList1.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            //get the Item
+            Employee item=arrayList1.get(i);
+
+            //load the xml into a view object
+
+            View v=getLayoutInflater().inflate(R.layout.activity_main2,null);
+
+            TextView textV1=(TextView) v.findViewById(R.id.textView1);
+            TextView textV2=(TextView) v.findViewById(R.id.textView2);
+            TextView textV3=(TextView) v.findViewById(R.id.textView3);
+
+            CheckBox checkBox1=(CheckBox) v.findViewById(R.id.checkBox1);
+
+            //assign some data to the view elements
+            textV1.setText(item.getEmpName());
+            textV2.setText(item.getEmpSal());
+            textV3.setText(item.getEmpDesignation());
+
+              // return row.xml
+            return v;
+        }
+    }
+}
