@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ujjwalsmahapatra.firstprojectpalleuniv.MainActivity">
+
+  <LinearLayout
+      android:layout_margin="1dp"
+      android:id="@+id/linear1"
+      android:layout_width="match_parent"
+      android:background="@drawable/firstactivitysection"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="CSharp for Freshers"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Duration:37 hrs"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Assignments:14 hrs"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Tests:22 hrs"
+        android:textSize="17sp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:background="@drawable/firstactivitysection"
+      android:layout_margin="1dp"
+      android:id="@+id/linear2"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_weight="1"
+      android:layout_height="0dp"
+      >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="CSharp for Professionals"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:text="Duration:37 hrs"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Assignments:14 hrs"
+        android:layout_weight="1"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="17sp"
+        android:text="Tests:22 hrs"
+        android:layout_weight="1"
+        />
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:background="@drawable/firstactivitysection"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="0dp"
+      android:layout_margin="1dp"
+      android:id="@+id/linear3"
+      android:layout_weight="1"
+      >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="SQLServer(t-SQL)"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Duration:37 hrs"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Assignments:14 hrs"
+        android:textSize="17sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Tests:22 hrs"
+        android:textSize="17sp"
+        android:layout_weight="1"/>
+  </LinearLayout>
+
+</LinearLayout>
