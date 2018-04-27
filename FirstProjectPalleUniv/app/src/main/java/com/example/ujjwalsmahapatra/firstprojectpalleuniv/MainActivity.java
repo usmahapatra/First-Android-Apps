@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this,ActivitySecond.class);
-                intent1.putExtra("linear1",1);
+                intent1.putExtra("course",1);
                 startActivity(intent1);
             }
         });
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this,ActivitySecond.class);
-                intent1.putExtra("linear2",2);
+                intent1.putExtra("course",2);
                 startActivity(intent1);
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this, ActivitySecond.class);
-                intent1.putExtra("linear3",3);
+                intent1.putExtra("course",3);
                 startActivity(intent1);
             }
         });
