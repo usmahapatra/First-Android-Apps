@@ -1,7 +1,10 @@
 package com.example.ujjwalsmahapatra.firstprojectpalleuniv;
 
 import android.app.ListActivity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,17 +44,32 @@ public class ActivitySecond extends ListActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            Video vid=arr.get(i);
+            final Video vid=arr.get(i);
             View v= getLayoutInflater().inflate(R.layout.activity_row,null);
             TextView t1=(TextView) v.findViewById(R.id.textView_serialNo);
             TextView t2=(TextView)v.findViewById(R.id.textView_vidName);
             TextView t3=(TextView)v.findViewById(R.id.textView_vidDuration);
+            Button b1=(Button) v.findViewById(R.id.button1);
+
 
             t1.setText(vid.getSerial_no());
             t2.setText(vid.getVid_name());
             t3.setText(vid.getVid_duration());
-
-
+            // Button Set On Click
+            b1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //if(getInternetStatus()==true) {
+                        Intent i = new Intent(ActivitySecond.this, Thr3dActivity.class);
+                        String vid_id = vid.getVideo_id();
+                        i.putExtra("vid_id", vid_id);
+                        startActivity(i);
+                   // }
+                   // else{
+                        //Toast.makeText(ActivitySecond.this,"Check Internet Availability",Toast.LENGTH_LONG).show();
+                   // }
+                }
+            });
 
 
             return v;
@@ -117,6 +136,19 @@ public class ActivitySecond extends ListActivity {
         }
 
 
+    }
+
+    public boolean getInternetStatus(){
+        ConnectivityManager connectivityManager=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager!=null){
+            NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+
+            if (networkInfo!=null&&networkInfo.isConnected())
+            {
+                return true;
+            }else return false;
+
+        }else return false;
     }
 
     @Override
