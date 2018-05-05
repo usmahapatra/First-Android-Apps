@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ujjwalsmahapatra.firstprojectpalleuniv">
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    package="com.example.ujjwalsmahapatra.spinnersecondselecteddisplay">
 
     <application
         android:allowBackup="true"
@@ -19,12 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ActivitySecond"
-            android:label="@string/title_activity_second"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".row" />
-        <activity android:name=".Thr3dActivity" android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
