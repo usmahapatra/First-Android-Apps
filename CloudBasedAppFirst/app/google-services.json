@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "60878146025",
+    "firebase_url": "https://cloudbasedappfirst.firebaseio.com",
+    "project_id": "cloudbasedappfirst",
+    "storage_bucket": "cloudbasedappfirst.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60878146025:android:79fcc78772a294d6",
+        "android_client_info": {
+          "package_name": "com.example.ujjwalsmahapatra.cloudbasedappfirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60878146025-gph2s0kup2spldsn1usjrr1ots45bias.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ujjwalsmahapatra.cloudbasedappfirst",
+            "certificate_hash": "b5da9cbd183bc5bca49077e9a12621347f955c69"
+          }
+        },
+        {
+          "client_id": "60878146025-st1a9in633uih9p8n990t79ssgnpb8gd.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "60878146025-st1a9in633uih9p8n990t79ssgnpb8gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpdm9y6aYPBstJUUow-GG6DfrJWRhYr4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60878146025-st1a9in633uih9p8n990t79ssgnpb8gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FF4"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF4">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF4">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/edit_image" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="Enter PhD Details" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF4">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:layout_weight="1"
+            android:src="@drawable/comment_image" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_gravity="right"
+            android:text="Enter MPhil Dessertations" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF4">
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:text="Enter Student Projects"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:layout_weight="1"
+            android:src="@drawable/sync_image" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF4">
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:text="Enter Faculty Publications"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:layout_weight="1"
+            android:src="@drawable/add_image" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button5"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Sync details from : Google Server" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.design.widget.TabLayout>
+</LinearLayout>
