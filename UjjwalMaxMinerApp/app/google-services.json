@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "466529840352",
+    "firebase_url": "https://maxminerproject.firebaseio.com",
+    "project_id": "maxminerproject",
+    "storage_bucket": "maxminerproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466529840352:android:35bfd1cd3c6369c9",
+        "android_client_info": {
+          "package_name": "com.example.ujjwalsmahapatra.ujjwalmaxminerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466529840352-3m11ekni2fb3tu8p7fhufir4fblbj4c2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ujjwalsmahapatra.ujjwalmaxminerapp",
+            "certificate_hash": "b5da9cbd183bc5bca49077e9a12621347f955c69"
+          }
+        },
+        {
+          "client_id": "466529840352-j79g25pvjtnj2do3sqb8poubm2bvavuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBars4mFraxZx710irazoiJo2rEb4RuZXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466529840352-j79g25pvjtnj2do3sqb8poubm2bvavuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
